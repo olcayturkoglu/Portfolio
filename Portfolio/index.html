@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OliiDesigns.</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/FavIcon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script
+      src="https://kit.fontawesome.com/c0ad795865.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="#header"><img src="images/Logo.png" class="logo" /></a>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="menu-icon" data-feather="x" onclick="closemenu()"></i>
+          </ul>
+          <i class="menu-icon" data-feather="menu" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Developer</p>
+          <h1>
+            Hi, I'm
+            <span
+              >Olcay<i onclick="playsound()" class="fa-solid fa-volume-high"></i
+              ><audio
+                id="audio"
+                style="display: none"
+                src="audio/Olcay pronounce.wav"
+              ></audio></span
+            ><br />Your Software Developer
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------------------------- About --------------------------------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/AboutMe-Picture.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              In the realm of software development, I pour my heart into every
+              line of code, driven by an insatiable passion for crafting digital
+              solutions. From the thrill of problem-solving to the artistry of
+              coding, each project is a personal journey. I thrive on the
+              challenge, seeing it as a chance to not just write code but to
+              bring innovative ideas to life. With a meticulous eye for detail
+              and an unwavering commitment to improvement, I transform
+              challenges into opportunities to grow and refine my skills.
+              Software development, for me, is not just a profession—it's a
+              deeply personal and rewarding pursuit.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('certificates')">
+                Certificates
+              </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Software Developer</span><br />Developing on the
+                  ServiceNow platform
+                </li>
+                <li>
+                  <span>Application Developer</span><br />Building Android/iOS
+                  applications
+                </li>
+                <li>
+                  <span>Frontend Developer</span><br />Designing and building
+                  Web applications
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022 - Current</span><br />ServiceNow Developer, The
+                  Capital Region Of Denmark
+                </li>
+                <li>
+                  <span>2022 - 2022</span><br />It-konsulent, Rigshospitalet
+                </li>
+                <li>
+                  <span>2022 - 2022</span><br />Flutter Developer, Doubble
+                </li>
+                <li>
+                  <span>2021 - 2022</span><br />Flutter Developer, Hero ApS
+                </li>
+                <li>
+                  <span>2021 - 2021</span><br />Flutter Developer, Cloudpro ApS
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020 - 2022</span><br />Bachelor's degree, Web
+                  development
+                </li>
+                <li>
+                  <span>2016 - 2018</span><br />Academy Profession (AP) Degree,
+                  Digital-communication, and multimedia design
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="certificates">
+              <ul>
+                <li>
+                  <span>Flutter and Dart.js</span><br /><a
+                    href="documents/Flutter-and-Dart-Certificate.pdf"
+                    download
+                    class="certificates"
+                    >Download Certificate</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------------- Services --------------------------------------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <a href="#services">
+            <i data-feather="code"></i>
+            <h2>Web Design</h2>
+            <p>
+              In web design, I merge creativity and functionality to craft
+              visually striking, user-centric sites. Each project involves
+              meticulous layout planning, color harmonization, and optimizing
+              for seamless responsiveness.
+            </p>
+          </a>
+          <a href="#services">
+            <i data-feather="smartphone"></i>
+            <h2>App Design</h2>
+            <p>
+              In my approach to app design, I blend innovative design and
+              functionality to sculpt visually appealing and user-friendly
+              mobile experiences. From understanding user needs to crafting a
+              seamless interface, each step is a personalized journey.
+            </p>
+          </a>
+          <a href="#services">
+            <i data-feather="crop"></i>
+            <h2>graphic Design</h2>
+            <p>
+              Graphic design is my canvas for visual storytelling, where every
+              element, from color to font, weaves a narrative. In this fusion of
+              creativity and purpose, each design is a meaningful brushstroke,
+              capturing both attention and intention.
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------------- Portfolio --------------------------------------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/Delicate.png" />
+            <div class="layer">
+              <h2>Delicate A/S</h2>
+              <h4>Customer Purchase:</h4>
+              <p>
+                ♦ WordPress Website<br />
+                ♦ Product Catalogue<br />
+                ♦ Ordering System<br />
+                ♦ Design<br />
+                ♦ Logo<br />
+                ♦ SEO<br />
+                ♦ Labels<br />
+                ♦ Video<br />
+                ♦ Images<br />
+                ♦ SoMe<br />
+                ♦ Webtext<br />
+                ♦ Google Account Setup
+              </p>
+              <a href="https://www.delikate.dk/" target="_blank"
+                ><i data-feather="external-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/TastyHouse.png" />
+            <div class="layer">
+              <h2>Tasty House ApS</h2>
+              <h4>Customer Purchase:</h4>
+              <p>
+                ♦ WordPress Website<br />
+                ♦ Menu<br />
+                ♦ Design<br />
+                ♦ Logo<br />
+                ♦ SEO<br />
+                ♦ Video<br />
+                ♦ Images<br />
+                ♦ SoMe<br />
+                ♦ Webtext<br />
+                ♦ Google account setup
+              </p>
+              <a href="https://www.tasty-house.dk/" target="_blank"
+                ><i data-feather="external-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/ScandicEmballage.png" />
+            <div class="layer">
+              <h2>Scandic Emballage A/S</h2>
+              <h4>Customer Purchase:</h4>
+              <p>
+                ♦ WordPress Website<br />
+                ♦ Webshop<br />
+                ♦ Icons<br />
+                ♦ Images<br />
+                ♦ SEO<br />
+                ♦ Design<br />
+                ♦ Advanced Login System<br />
+                ♦ Webtext<br />
+                ♦ Google account setup
+              </p>
+              <a href="https://www.scandicemballage.dk/" target="_blank"
+                ><i data-feather="external-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div id="toggle-work">
+          <div class="work-list">
+            <div class="work">
+              <img src="images/Chilis.png" />
+              <div class="layer">
+                <h2>Chilis ApS</h2>
+                <h4>Customer Purchase:</h4>
+                <p>
+                  ♦ WordPress Website<br />
+                  ♦ Menu<br />
+                  ♦ Video<br />
+                  ♦ Logo<br />
+                  ♦ SEO<br />
+                  ♦ Design<br />
+                  ♦ Images<br />
+                  ♦ SoMe<br />
+                  ♦ Webtext<br />
+                  ♦ Google account setup
+                </p>
+                <a href="https://www.kebabchilispizza.dk/" target="_blank"
+                  ><i data-feather="external-link"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/PHPWebshop.png" />
+              <div class="layer">
+                <h2>PHP Webshop Project</h2>
+                <h4>Customer Purchase:</h4>
+                <p>
+                  ♦ Navigation System<br />
+                  ♦ Administration Page<br />
+                  ♦ Advanced Login System<br />
+                  ♦ Session use for admin and users<br />
+                  ♦ Registration for users<br />
+                  ♦ Validate using regular expression<br />
+                  ♦ Dynamic menu<br />
+                  ♦ Webshop<br />
+                  ♦ Product Administration Page
+                </p>
+                <a href="http://dev.oliidesigns.dk/" target="_blank"
+                  ><i data-feather="external-link"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/TastyHouseHolbaek.png" />
+              <div class="layer">
+                <h2>Tasty House Holbæk ApS</h2>
+                <h4>Customer Purchase:</h4>
+                <p>
+                  ♦ WordPress Website<br />
+                  ♦ Menu<br />
+                  ♦ Video<br />
+                  ♦ Logo<br />
+                  ♦ SEO<br />
+                  ♦ Design<br />
+                  ♦ Images<br />
+                  ♦ SoMe<br />
+                  ♦ Webtext<br />
+                  ♦ Google account setup
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="btn" onclick="myFunction()">Show more</button>
+      </div>
+    </div>
+    <!--------------------------------------------------- Contact --------------------------------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="flexbox">
+              <i class="fa-regular fa-envelope"></i>
+              <a href="mailto:info@oliidesigns.dk">Info@oliidesigns.dk</a>
+            </div>
+            <div class="flexbox">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+45 50 53 29 51">+45 50 53 29 51</a>
+            </div>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/olcay.turkoglu.56/"
+                target="_blank"
+                ><i data-feather="facebook"></i
+              ></a>
+              <a href="https://github.com/olcayturkoglu" target="_blank"
+                ><i data-feather="github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/olcayturkoglu/"
+                target="_blank"
+                ><i data-feather="linkedin"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/olcayturkoglu1/"
+                target="_blank"
+                ><i data-feather="instagram"></i
+              ></a>
+            </div>
+            <!-- <a href="#" download class="btn btn2">Download CV</a> -->
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Full name" required />
+              <input type="email" name="Email" placeholder="Email" required />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>COPYRIGHT © OLIIDESIGNS • ALL RIGHTS RESERVED</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("toggle-work");
+        var btn = document.getElementById("btn");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+          btn.innerHTML = "Show more";
+        } else {
+          x.style.display = "block";
+          btn.innerHTML = "Show less";
+        }
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxhu66qdALLrCQnrlVhwbf2oa_9rtYM2QpX8G43QsWQJghOEzl8L4zF_gVNjYtwOyau/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent succesfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script>
+      function playsound() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
